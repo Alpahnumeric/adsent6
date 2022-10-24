@@ -26,20 +26,13 @@
     <script>
         var videos = ["https://www.youtube.com/embed/9bZkp7q19f0", "https://www.youtube.com/embed/dQw4w9WgXcQ"];
         window.onload = function () {
-            var playerDiv = document.getElementById("randomplayer");
-            var player = document.createElement("IFRAME");
             var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
-            player.setAttribute('width', '640');
-            player.setAttribute('height', '390');
-            player.setAttribute('src', randomVideoUrl);
-            player.setAttribute('allowfullscreen',' ');
-            playerDiv.appendChild(player);
+            <iframe src="//player.vimeo.com/video/38514156" width="560" height="315" frameborder="0" allowfullscreen></iframe>
           
         };
     </script>
 </head>
 
 <body>
-    <div id = "randomplayer" />
 </body>
 </html>
