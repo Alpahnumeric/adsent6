@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <style>
        .auto-resizable-iframe {
@@ -24,27 +23,19 @@
     </style>
    
     <title>Video Ad</title>
-    <script>
-        var videos = ["https://www.youtube.com/embed/9bZkp7q19f0", "https://www.youtube.com/embed/dQw4w9WgXcQ"];
-        window.onload = function () {
-            var playerDiv = document.getElementById("random_player");
-            var player = document.createElement("IFRAME");
-            var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
-            player.setAttribute('width', '640');
-            player.setAttribute('height', '390');
-            player.setAttribute('src', randomVideoUrl);
-
-            playerDiv.appendChild(player);
-        };
-    </script>
 </head>
 
 <body>
-    <div id="random_player" />
+      <script>
+        var videos = ["https://www.youtube.com/embed/9bZkp7q19f0", "https://www.youtube.com/embed/dQw4w9WgXcQ"];
+        window.onload = function () {
+            var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
+        };
+    </script>
       
     <div class="auto-resizable-iframe">
         <div>
-            <iframe frameborder="0" allowfullscreen="" src= "https://www.youtube.com/embed/9bZkp7q19f0"></iframe>
+            <iframe frameborder="0" allowfullscreen="" src= randomVideoUrl></iframe>
         </div>
     </div>
       
