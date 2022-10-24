@@ -2,6 +2,27 @@
 <html>
 
 <head>
+    <style>
+       .auto-resizable-iframe {
+           max-width: 560px;
+           margin: 0px auto;
+        }
+        
+        .auto-resizable-iframe > div {
+            position: relative;
+            padding-bottom: 75%;
+            height: 0px;
+        }
+        
+        .auto-resizable-iframe iframe {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+      
     <title>Video Ad</title>
     <script>
         var videos = ["https://www.youtube.com/embed/9bZkp7q19f0", "https://www.youtube.com/embed/dQw4w9WgXcQ"];
@@ -20,25 +41,15 @@
 
 <body>
     <div id="random_player" />
-    
-    <div class="video-container">
-    <iframe class="video" src="https://www.youtube.com/embed/RcnksOUugcA" allowfullscreen></iframe>
+      
+    <div class="auto-resizable-iframe">
+        <div>
+            <iframe frameborder="0" allowfullscreen="" src=randomVideoUrl></iframe>
+        </div>
     </div>
-    
-    .video-container {
-        position: relative;
-        width: 100%;
-        padding-bottom: 56.25%;
-    }
-    
-    .video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-    }
-    
+      
 </body>
 </html>
+
+
+
