@@ -1,38 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-       .auto-resizable-iframe {
-           max-width: 560px;
-           margin: 0px auto;
-        }
-
-        .auto-resizable-iframe > div {
-            position: relative;
-            padding-bottom: 75%;
-            height: 0px;
-        }
-
-        .auto-resizable-iframe iframe {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
-    
     <title>Video Ad</title>
     <script>
-        var videos = ["https://www.youtube.com/embed/9bZkp7q19f0", "https://www.youtube.com/embed/dQw4w9WgXcQ"];
+        var videos = ['h6CcxJQq1x8', 'MX145Tu4MHY', 'iZIHSn1ILxs', 'w4kHmbZTvyI', '-S0Azz85mlA', 'gm_n76Dsl0c', 'lfABnAS5i9Q', 'xeo9mVnuuWo', 'ghex3MkcoJw', 'dUig9IAwggM', 'HtYOm59fys8', 'NFg3HBMJyV4', '9MepHcKOYeU', '0A43tb18T8Y', 'E4_ygnUilm4', 'JuHMQ0QpH44', 'zwY6acYYO3o', 'gQPN3UKQM-U', 'L4mP9pR-mzU', 'sdzPp7V21fI', 'yfp2Bg6iUdY', 'sm9uHf9sm6c', 'uwDDvP8Yssc', 'zmI_uwjTuY0', 'SqtxzgFpP6U', 'yl98-LC3fsU', 'Vf2rlIqGlqM', 'VcSBO8YAnTQ', 'YjzesjojNhA', 'bQ3nBSTpq4M', 'KyiV12WdJew', 'HKV0QuQsonk', 'njY94weLbJ8', '0K8lrVjT6fM', 'Go9rf9GmYpM', 'J64QS4tE6ic', 'M5WhyVCEDN4', '8-p0CxW87pg', '4u_Ed0Bh-s0', 'pM2OK_JaJ9I', 'wnwEntgHyFI', '3dnW8QJxHD0', 'PcFtcoo0ic4', 'hieKgQNQpMA', 'lCOcjWG6Ykc', 'vH2LsFcWOFY', 'ML160wA9mME', 'yQxTNjQe0Xs', 'yICX_ZQ86Mw', 'In5fvjwUi9k', 'c19HRM0x-lA', 'cDzYgqkQ_lE', 'bJZAvOefJiI', 'ZvEPYH7GRUM', 'oo5zwV6_yVs', 'B1Vcbm-XWtg', '5zjTJ4YPfDw', 'qw6_5t8XfSk', 'X96RjH8WC5o', 'ZMoO5eLmDBA', 'X5vjQQXauD0', 'aNN9nL2vppM', 'O4OJoXKWTBk', 'oh8-PifcIUQ', 'V7g4e5m5aRc', 'jgC8y0ksrRg', 'SlR_fwcU3MU', 'AR-Iz1fts5M', 'EOyQfd7OqIY', '7UjqLfjsfMk', 'Q3v-N8o3lc0', 'tE9U4mMqKP4', 'yj9iEcOQDeo', '1DHo8fYFsd0', 'B-xG3D8OMQk', 'GXru4Q7Lgxo', '9WoM2bHfr48', '2S2VUCdbhg0', 'YV8zGNe7Ebg', '7-OnEe-dauE', 'LMCGADFNDiQ', '83_ceB0TsiY', '1SlSxuhLJVE', 'yVI7JelAzPc', 'ftgxuNLVvVw', 'kw03nalTAMQ', 'q8MLuni8rzc', 'EtZWhm_5ojo', 'ew9cEATPzDE', 'WlUvQkW4B1k', 'w10a7OCsjzE', 'JiOZ4Bz2d-Q', 'TMN_cfCSFWw', 'D0AoauuOY2w', '7TxknbusTa8', 'bXL8QPWLbBo', 'WAeepKLHuF8', 'jRCTcUh-XOc', 'owZLdJIfPw4', 'Cclzg9ZiUG4', 'rEtXkFmpsRk', 'tSJXjRkCKvI', 'juDuVT2goxs', 'HJJvbDeByGk', 'FfezfZPw-qk', '7ClI2bp__Bs', 'xw1NIDFUdJI', 'CPtRohwHMB4', 'a05SWVIPdb8', 'fOUilxJWm24', 'eZgD89VYkVc', '-UyVgaFE8-s', 'RS3iB47nQ6E', 'zXU9Ur9QznE', 'Nlw1YnVW58c', 'HTOP6TOJwOI', 'j4tXCs4KgmU', 'ejEBSeddCg8', 'PPqKOfCzN20', 'qIVDxL2lgN4', 'VX32RKuqIVs', 'OEQzJRRIXKs', 'gYQbQmtA6IU', 'ClKMIr3WpjY', 'WrE6iE7xnN0', '69MpLiYhsXw', 't9AV9szGAG4', 'N-rgqDhnLoU', '_BZsIY6PUPU', 'wqiw_E4tyuQ', 'kf7lTlqb-qo', 'o6afGyzyrVE', 'Z8yW5cyXXRc', 'oTS1RIZboqU', 'tfcoOFmZbVw', '4XQ7x7c2hkQ', 'KQCbke3pps8', 'TfOumoFSs0k', 'HbJHkwHZCCM', 'o31szjNyh4Q', 'Q26s_zWTykQ', '0V4UyjEyeOA', 'ctemZdDG7YA', 'uNvmSvmNvQM', 'TdrE1VMxzoE', '2Dq2-98HliQ', '_yl7YfEyK4Y', 'ug64FCgrQl4', 'bZIzRqDOSZo', 'iVHy8MG2CQU', 'nz3qGgt7b2s', 'FuKGC1djld0', 'bltuzqFTaiw', 'tviPLpD8VG8', 'bggFBWn7YoI', 'XQ-NXWecM94', 'bGJSEEx2pXc', 'Dd_GSSQQGNY', '2fQUYCPe3Cs', 'kUJjvwkcWcg', '2ywv_JCyolU', '6bJOIqVAD-s', 'tIG0kB9lOxo', 'DyO-z_7Ip9c', '0yA98MujNeM', 'FhfcdqMTtU4', 'lvBCvA1LE8o', 'xwNe5Kqi3Ho', 'zFubzSu2AOE', 'hi5TfqXrplM', '86IpU3g-S8Q', 'Ug75diEyiA0', '7gMZ62PsvRM', 'ty7Fu2kIfPI', 'V6F2szDteSI', 'JJmqCKtJnxM', 'FxZNhjkMtFE', 'rmPRHJd3uHI', 'dTcv5q4WfMM', 'N60utqXf5HQ', 'iNfChrsWlPM', 'O6rHeD5x2tI', 'xTpv9lc_qMw', 'eBDXxtnRp4Y', '31pEZWaIhr0', 'NmannAYiwh0', 'TnXArm-NViI', 'rrxE_KCnO44', '7pOoSe2K5DU', 'y9ajRIgTJNA', 'lNNDr1vH83Y', 'cO7iCbtlcIc', 'eHh0bqD78b0', 'XyZtMfMWONI', 'KObDkEBwuTc', 'jlWwjUZUROA', 'TosjG0E191U', 'cnIYtqPUlFs', 'm58Bp6PfXss', 'XBXlh4E9HhU', '-rYZwYEpCds', 'c-PfqVlBUuQ', 'R2QRUN_gO74', 'xEYInUvLalQ', '2j65DpagyhI', 'e8374g64kCE', 'T1Scd0rNt-s', 'Ol7x46IpMTQ', 'r0m0tP0nR_0', '7vMVNA8PY7A', 'vVaSYcRnxRQ', 'sxlyWieYZsE', '_IYJO-Ik7Pg', 'rZMkBHI0uR0', 'K4wLg5g1xPw', 'MOBdTP9ZB-I', 'YlKDu_XtG_I', 'By0S8NpLPH4', 'sRv9_Q3HOmg', 'tE2JZ5eQnUE', 'JqNjeNeJzuA', 'DH2yYPyH0VY', 'WEJJUGJZxpU', '3LJvV4dHtHA', 'G01psD8GU-M', 'uLg4kDAGZuw', '5CaMUfxVJVQ', 'sh6vqhOUX8Q', 'kZCbvpJ4O6c', 'UKn_7fyB5fw', 'Qq7c7hBXlek', 'A1W6Ku5bJR4', 'zE9wNkE820w', 'WlNH9bzju8U', 'H_WSu29W1CQ', 'PmrTDZy3f2M', 'Hsufiso4mLo', 'Nmgice3ieZ4', '4a5fS0F6LLA', 'eEgMjH9bVgQ', 'bWUIugV3AGc', 'WExHEUYou8Y', 'csrPT9ClVUc', 'dcTjsBMIRU0', '113mRmchumY', 'qoxRKfaG36Y', 'OlZqBR3yTiw', '7LQpRQh2KSQ', 'mucuLrWHGqc', 'LmSmrSm235A', '3jx_NcuZXac', 'WhfntLl6xx0', '8Bc0WjTT0Ps', 'SZ59-omEYgc', 'GINmvzOpfvc', '2T-AxWMZBfU', 'vEEWxUHKUZA', 'vSROQRmdZJU', 'jjV91ZRqu-o', 'T1rZ_GuLZ6s', 'wcAXkD9DjD8', 'DvpKouRTCx0', 'Z76fSElJu8o', 'fKTTV-E-aLs', '1w1myYavVsE', 'J0HKpQyhmcA', 'OkT_d2OTgv0', 'AHEqtl6XtOc', 'KtkfE_OWSzo', 'ql7uY36-LwA', 'iaUcLzxMFq4', 'zKQbsrRutvE', 'CwpNQWrD8PY', 'Dlf1_vuIR4I', 'kte8Eij3TPQ', 'EjQ5Yw72xtA', 'l0fJnbuc1ig', 'zvq5rMEbNbw', 'f6cvgN0j_CY', 'xaZlPaj5SAg', '7ZvOqYVs2ao', '1q8ihgBaYog', '6BB9MI_8bsE', 'BWTmYKKCmZk', 'L4zQ_q0fbmw', 'M7-KYW_FgqM', '0LcHFkXmCb8', '8FYJKrHNeqI', 'SPc70pG-7tY', 'CCBnUx5uMqE', '9VYLCP0JeIU', '2ULiauoHeeI', 'cYIN-b8qjmo', 'Q-0MP0Ql4II', 'c9THt-uJRTU', 'MixNh9L7G5M', 'PySuLH7NAQg', 'Xu25lUDJZgY', 'YkyTQP27H6s', 'tMe3WDmxBEI', '6mpS6V6Ucrk', '5QLUr7zVBeY', 'NySN_plfiNI', 'h7y6iE0aB5s', 'l1vvlpJ8BEE', 'LpjojQea7Lw', 'WEv1DrfntZ4', 'E1KVn_XQlqA', 'GqrhVFrDTd8', 'QtznmBe_T8w', '4tqM0RSzQvM', 'DoXRMooXv0c', 'rdcLg35QMs0']
         window.onload = function () {
-            var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
-            <iframe src="//player.vimeo.com/video/38514156" width="560" height="315" frameborder="0" allowfullscreen></iframe>
-          
+            var playerDiv = document.getElementById("random_player");
+            var player = document.createElement("IFRAME");
+            var VidTag = videos[Math.floor(Math.random() * videos.length)];
+            var YT = "https://www.youtube.com/embed/"
+            var randomVideoUrl2 = YT.concat(VidTag)
+            var randomVideoUrl = 'https://www.youtube.com/embed/RcnksOUugcA'
+            player.setAttribute('width', '640');
+            player.setAttribute('height', '390');
+            player.setAttribute('src', randomVideoUrl);
+            player.setAttribute('allowfullscreen', true);
+            playerDiv.appendChild(player);
         };
     </script>
-</head>
-
+</head>    
 <body>
+    <div id="random_player" />
 </body>
 </html>
